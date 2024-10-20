@@ -1,11 +1,11 @@
 
 import Footer from "./components/Footer";
 import CTA from "./components/Cta";
-import Mission from "./component/Mission";
-import Team from "./component/Team";
-import Features from "./component/Feature";
-import Navbar from "./component/Navbar";
-import LandingPage from "./component/Landingpage";
+import Mission from "./components/Mission";
+import Team from "./components/Team";
+import Features from "./components/Feature";
+import Navbar from "./components/Navbar";
+import LandingPage from "./components/Landingpage";
 
 export default function Home() {
   return (

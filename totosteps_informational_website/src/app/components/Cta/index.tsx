@@ -1,5 +1,9 @@
 import Image from 'next/image';
+import { Nunito } from 'next/font/google';
 
+
+
+const nunito = Nunito({ subsets: ['latin'] });
 export default function CTA() {
   return (
     <section className="bg-[#4C0033] text-white py-12 px-4 sm:py-16 sm:px-6 md:py-20 md:px-8 lg:py-24 lg:px-10 xl:px-12">
