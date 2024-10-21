@@ -1,3 +1,5 @@
+
+
 'use client'
 import { useState } from 'react';
 import Link from 'next/link';
@@ -10,14 +12,15 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className={`flex justify-between items-center py-2 px-4 sm:px-6 bg-white ${nunito.className}`}>
+    <nav className={`flex justify-between items-center px-8 -mt-2 -mb-7 sm:px-12 bg-white ${nunito.className}`}>
       <div className="flex items-center">
-        <Image src="/Images/Totosteps.png" alt="TotoSteps Logo" width={120} height={120} className="w-auto h-16 sm:h-20" />
+        <Image src="/Images/Totosteps.png" alt="TotoSteps Logo" width={150} height={200} className="w-40 m:h-24" />
       </div>
-      <div className="hidden md:flex space-x-4 lg:space-x-6 ml-auto">
+      <div className="hidden md:flex space-x-12 lg:space-x-12 ml-auto">
         <Link href="#home" className="text-black hover:text-[#F58220] font-semibold text-sm lg:text-[20px]">Home</Link>
         <Link href="#features" className="text-black hover:text-[#F58220] font-semibold text-sm lg:text-[20px]">Features</Link>
         <Link href="#mission" className="text-black hover:text-[#F58220] font-semibold text-sm lg:text-[20px]">Mission</Link>
+        <Link href="#team" className="text-black hover:text-[#F58220] font-semibold text-sm lg:text-[20px]">Team</Link>
       </div>
       <div className="md:hidden">
         <button
@@ -30,15 +33,15 @@ const Navbar = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-[#F58220] bg-opacity-90 z-50 flex flex-col items-start justify-start pt-20 px-6 transition-all duration-300 ease-in-out md:hidden">
+        <div className="fixed inset-0 bg-[#1a061f] bg-opacity-90 z-50 flex flex-col items-center justify-start pt-20 px-6 transition-all duration-300 ease-in-out md:hidden">
           <button className="absolute top-4 right-4 text-white text-3xl" onClick={() => setIsMenuOpen(false)}>
             &times;
           </button>
-          <div className="text-white text-2xl space-y-6 w-full">
+          <div className="text-white text-2xl space-y-6 w-full flex flex-col items-center">
             <Link href="#home" className="block" onClick={() => setIsMenuOpen(false)}>Home</Link>
             <Link href="#features" className="block" onClick={() => setIsMenuOpen(false)}>Features</Link>
             <Link href="#mission" className="block" onClick={() => setIsMenuOpen(false)}>Mission</Link>
-          
+            <Link href="#team" className="block" onClick={() => setIsMenuOpen(false)}>Team</Link>
           </div>
         </div>
       )}
@@ -47,3 +50,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
