@@ -1,11 +1,10 @@
 
-import Footer from "./components/Footer";
-import CTA from "./components/Cta";
-import Mission from "./components/Mission";
-import Team from "./components/Team";
-import Features from "./components/Feature";
-import Navbar from "./components/Navbar";
-import LandingPage from "./components/Landingpage";
+import Footer from "./components/footer";
+import Mission from "./components/mission";
+import Team from "./components/team";
+import Features from "./components/features";
+import Navbar from "./components/navbar";
+import LandingPage from "./components/landingpage";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <Features />
       <Mission />
       <Team />
-      <CTA />
       <Footer />
     </main>
   );
